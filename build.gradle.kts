@@ -9,7 +9,7 @@ plugins {
 
 group = "io.paketo"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
@@ -40,6 +40,10 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
-tasks.getByName<Jar>("jar") {
-	enabled = false
+springBoot {
+	buildInfo {
+		properties {
+			artifact = "demo-0.0.1-SNAPSHOT.jar"
+		}
+	}
 }
