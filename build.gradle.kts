@@ -39,3 +39,7 @@ tasks.withType<KotlinCompile> {
 		jvmTarget = "11"
 	}
 }
+
+tasks.getByName<Jar>("jar") {
+	enabled = false
+}
