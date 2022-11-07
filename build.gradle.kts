@@ -40,10 +40,14 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
-springBoot {
-	buildInfo {
-		properties {
-			artifact = "demo-0.0.1-SNAPSHOT.jar"
-		}
-	}
+tasks.getByName<Jar>("jar") {
+	enabled = false
 }
+
+//springBoot {
+//	buildInfo {
+//		properties {
+//			artifact = "demo-0.0.1-SNAPSHOT.jar"
+//		}
+//	}
+//}
