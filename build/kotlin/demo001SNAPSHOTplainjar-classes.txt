@@ -1,0 +1,1 @@
+C:\Users\manue\Documents\github\spring\build\classes\kotlin\main\io\paketo\demo\DemoApplication.class;C:\Users\manue\Documents\github\spring\build\classes\kotlin\main\io\paketo\demo\DemoApplicationKt.class;C:\Users\manue\Documents\github\spring\build\classes\kotlin\main\io\paketo\demo\infrastructure\HelloController.class
